@@ -23,3 +23,8 @@ def characterselect(): #selects characters to be used. Allows addition of new ch
 	try: #use list "characters" to grab files/execute new char creator
 	except IOError:
 		print("Character \"", x, "\" not found. Would you like to add a new character?")
+		
+def turn_count(): #keeps track of turns for status effect purposes, etc
+	yn = input("Are you ready to start the encounter? (y/n)")
+	if yn == "y":
+		count = int(input("Enter the turn number you wish to start on."))
