@@ -1,5 +1,3 @@
-#This is a test
-
 # I will be doing the main file, which includes: 
 	#version picker,
 	#turn tracker,
