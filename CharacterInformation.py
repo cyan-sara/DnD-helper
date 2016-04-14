@@ -6,16 +6,21 @@
 
 
 def main():
-    D1=[]
-    Print(" Informtion")
-    name=input("Enter Character Name: ")
-    Class=input("Enter Class: ")
-    LvL=int(input("Level: "))
-    race=input("Race: ")
-    Alin=input("Alignment: ")
-    EXP=int(input("Experience Points: "))
-    PN=input("Player Name: ")
-    D1["name"]= name
+    D1={}    
+    while True:
+        yn=input("Would you like to create a character? (y/n) ")
+        if yn=="n":
+            break
+        name=input("Enter Character Name: ")
+        Class=input("Enter Class: ")
+        LvL=int(input("Level: "))
+        race=input("Race: ")
+        Alin=input("Alignment: ")
+        EXP=int(input("Experience Points: "))
+        PN=input("Player Name: ")
+        print("")
+        
+    print(D1)
 
 main()
 
