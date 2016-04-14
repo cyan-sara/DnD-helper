@@ -10,6 +10,10 @@ import #Bianca
 def main():
 	print("This program serves as a helper for Dungeons and Dragons DMs.")
 	version = input("Please select your version number: ") #this will affect the books that we have. Might get tossed if we can't do books
+	characterselect()
+	turncount = turn_begin()
+	
+	
 	
 	
 def characterselect(): #selects characters to be used. Allows addition of new chars (executes Bianca's module)
@@ -24,7 +28,12 @@ def characterselect(): #selects characters to be used. Allows addition of new ch
 	except IOError:
 		print("Character \"", x, "\" not found. Would you like to add a new character?")
 		
-def turn_count(): #keeps track of turns for status effect purposes, etc
+def turn_begin(): #keeps track of turns for status effect purposes, etc
 	yn = input("Are you ready to start the encounter? (y/n)")
+	count = 0
 	if yn == "y":
-		count = int(input("Enter the turn number you wish to start on."))
+		count += int(input("Enter the turn number you wish to start on."))
+	print("Current turn:", count)
+	return count
+	
+main()
