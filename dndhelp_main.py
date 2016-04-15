@@ -8,7 +8,7 @@
 #Bianca
 
 def main():
-	print("This program serves as a helper for Dungeons and Dragons (version 5) DMs.")
+	print("This program serves as a helper for Dungeons and Dragons (version 5, no homebrewing) DMs.")
 	#run char creator
 	turncount = encount_begin()
 	while True:
