@@ -9,7 +9,7 @@
 
 def main():
 	print("This program serves as a helper for Dungeons and Dragons (version 5, no homebrewing) DMs.")
-	#run char creator
+	char_creator()
 	turncount = encount_begin()
 	while True:
 		x= input("What would you like to do next? Add character, roll dice, end turn, end encounter. ")
@@ -18,15 +18,27 @@ def main():
 			turncount += 1
 			print("Current turn:", turncount)
 		elif x == "add character":
-			#execute char creator
+			char_creator()
 		elif x == "roll dice":
+			print()
 			#execute dice roller
 		elif x == "end encounter":
 			break
 		else:
 			print("Invalid command.")
 	print("Goodbye!")
-	
+
+def char_creator():
+	yn = input("Would you like to create a new character? (y/n) ")
+	if yn == "y":
+		print()
+		#run character creator
+	else:
+		exist = input("Would you like to load saved character(s)? (y/n) ")
+		if exist == "y":
+			charx = input("Enter the character(s) you would like to load. (Tab between each) ")
+			print(charx.split())
+			
 			
 def encount_begin(): #keeps track of turns for status effect purposes, etc
 	yn = input("Are you ready to start the encounter? (y/n)")
