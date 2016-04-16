@@ -12,7 +12,7 @@ def main():
 	char_creator()
 	turncount = encount_begin()
 	while True:
-		x= input("What would you like to do next? ")
+		x= input("\nWhat would you like to do next? ")
 		x = x.lower().rstrip()
 		if x=="end turn":
 			turncount += 1
@@ -27,10 +27,10 @@ def main():
 			help()
 		else:
 			print("I don't understand", "'"+x+"'.", "Type 'help' for a list of commands. ")
-	print("Goodbye!")
+	print("\nGoodbye!")
 
 def char_creator():
-	yn = input("Would you like to create a new character? (y/n) ")
+	yn = input("\nWould you like to create a new character? (y/n) ")
 	charx = ""
 	if yn == "y":
 		print() #run character creator
@@ -50,15 +50,16 @@ def char_creator():
 	return() #the characters?
 			
 def encount_begin(): #keeps track of turns for status effect purposes, etc
-	yn = input("Are you ready to start the encounter? (y/n)")
+	yn = input("\nAre you ready to start the encounter? (y/n) ")
 	count = 0
 	if yn == "y":
 		print("Have fun storming the castle!")
-		count += int(input("Enter the turn number you wish to start on."))
+		count += int(input("\nEnter the turn number you wish to start on. "))
 	print("Current turn:", count)
 	return count
 
 def help():
+	print()
 	print("Type 'add character' to add or load a character.")
 	print("Type 'roll dice' to roll a die.")
 	print("Type 'end turn' to end the turn.")
