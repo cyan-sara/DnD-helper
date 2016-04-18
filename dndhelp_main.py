@@ -34,10 +34,10 @@ def char_creator():
 	charx = ""
 	if yn == "y":
 		npc = input("Is this character an NPC? (y/n) ")
-			if npc == "y":
-				print() #call npc creator
-			else:
-				print() #call character creator
+		if npc == "y":
+			print() #call npc creator
+		else:
+			print() #call character creator
 	else:
 		exist = input("Would you like to load saved character(s)? (y/n) ")
 		if exist == "y":
