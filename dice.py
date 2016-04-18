@@ -1,16 +1,17 @@
 import random
 
-rollagain="yes"
+def diceroll():
+    rollagain="yes"
 
-while rollagain=="yes":
-    dmax=int(input("How many sides? \n"))
+    while rollagain=="yes":
+        dmax=int(input("How many sides? \n"))
 
-    min=1
-    max=dmax
+        min=1
+        max=dmax
 
-    print("Rolling...")
-    print(random.randint(min,max))
+        print("Rolling...")
+        print(random.randint(min,max))
 
-    rollagain=input("Roll again? (yes/no)")
-    
+        rollagain=input("Roll again? (yes/no)")
+        
 
