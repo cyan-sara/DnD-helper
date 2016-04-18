@@ -1,7 +1,7 @@
 # I will be doing the main file, which includes: 
-	#version picker,
 	#turn tracker,
-	#data retrieval on characters
+	#data retrieval on characters,
+	#calls for all functions
 
 #Tanner
 #Sara
@@ -20,7 +20,7 @@ def main():
 		elif x == "add character":
 			char_creator()
 		elif x == "roll dice":
-			print() #execute dice roller
+			print() #call dice roller
 		elif x == "end encounter":
 			break
 		elif x == "help":
@@ -33,7 +33,11 @@ def char_creator():
 	yn = input("\nWould you like to create a new character? (y/n) ")
 	charx = ""
 	if yn == "y":
-		print() #run character creator
+		npc = input("Is this character an NPC? (y/n) ")
+			if npc == "y":
+				print() #call npc creator
+			else:
+				print() #call character creator
 	else:
 		exist = input("Would you like to load saved character(s)? (y/n) ")
 		if exist == "y":
@@ -46,7 +50,7 @@ def char_creator():
 			except IOError:
 				restart = input("Character", value, "not found. Would you like to create a new one? (y/n) ")
 				if restart == "y":
-					print() #run character creator
+					print() #call character creator
 	return() #the characters?
 			
 def encount_begin(): #keeps track of turns for status effect purposes, etc
