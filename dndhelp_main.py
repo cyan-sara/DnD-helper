@@ -3,7 +3,7 @@
 	#data retrieval on characters,
 	#calls for all functions
 
-import dice.py #Tanner
+import dice #Tanner
 #Sara
 #Bianca
 
@@ -20,7 +20,7 @@ def main():
 		elif x == "add character":
 			char_creator()
 		elif x == "roll dice":
-			diceroll()
+			dice.diceroll()
 		elif x == "end encounter":
 			break
 		elif x == "help":
