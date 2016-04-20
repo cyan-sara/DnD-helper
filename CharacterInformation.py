@@ -4,9 +4,11 @@
 #Lower cases Key Values
 
 #def Playable():
-import collections
+import printCharInfo.py
+
 def main():
     print("\nYou are creating a playable character.")
+    
     name=input("Enter Character Name: ")
     Class=input("Enter Class: ")
     LvL=int(input("Level: "))
@@ -16,14 +18,8 @@ def main():
     PN=input("Player Name: ")
     print("")
     Player={"Name":name,"Class":Class,"Level":LvL,"Race":race,"Alignment":Alin,"Exp":EXP,"Player Name":PN}
-    print("Name: ",Player["Name"])
-    print("Class: ",Player["Class"])
-    print("Level: ",Player["Level"])
-    print("Race: ",Player["Race"])
-    print("Alignment: ",Player["Alignment"])
-    print("Exp: ",Player["Exp"])
-    print("Player Name: ",Player["Player Name"])
     
+    printCharInfo.printCharInfo(Player)
     
 main()
 #return Player
