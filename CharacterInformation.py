@@ -2,13 +2,10 @@
 # Using file;Dictionaries 
 # Goal is to turn all the sheets into files'
 #Lower cases Key Values
-#Would you like input the story of your character? (File input)
-#Ask if NPC or Playable Character
 
-
-
-def PlayableChara(player):
-    Player={}
+#def Playable():
+import collections
+def main():
     print("\nYou are creating a playable character.")
     name=input("Enter Character Name: ")
     Class=input("Enter Class: ")
@@ -17,23 +14,18 @@ def PlayableChara(player):
     Alin=input("Alignment: ")
     EXP=int(input("Experience Points: "))
     PN=input("Player Name: ")
-    Player["name"]= name
     print("")
-    print(Player)
+    Player={"Name":name,"Class":Class,"Level":LvL,"Race":race,"Alignment":Alin,"Exp":EXP,"Player Name":PN}
+    print("Name: ",Player["Name"])
+    print("Class: ",Player["Class"])
+    print("Level: ",Player["Level"])
+    print("Race: ",Player["Race"])
+    print("Alignment: ",Player["Alignment"])
+    print("Exp: ",Player["Exp"])
+    print("Player Name: ",Player["Player Name"])
+    
+    
+main()
+#return Player
 
-    return Player
 
-def NPCChara(NPC):
-    print("\nYou are creating a non-playable character.")
-    name=input("Enter Character Name: ")
-    Class=input("Enter Class: ")
-    LvL=int(input("Level: "))
-    race=input("Race: ")
-    Alin=input("Alignment: ")
-    EXP=int(input("Experience Points: "))
-    PN=input("Player Name: ")
-    Player["name"]= name
-    print("")
-    print(Player)
-
-    return NPC
