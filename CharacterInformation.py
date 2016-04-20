@@ -7,6 +7,7 @@
 import printCharInfo
 
 def main():
+    
     print("\nYou are creating a playable character.")
     
     name=input("Enter Character Name: ")
@@ -17,11 +18,11 @@ def main():
     EXP=int(input("Experience Points: "))
     PN=input("Player Name: ")
     print("")
-    Player={"Name":name,"Class":Class,"Level":LvL,"Race":race,"Alignment":Alin,"Exp":EXP,"Player Name":PN}
     
+    Player={"Name":name,"Class":Class,"Level":LvL,"Race":race,"Alignment":Alin,"Exp":EXP,"Player Name":PN}
     printCharInfo.printCharInfo(Player)
     
 main()
-#return Player
+
 
 
