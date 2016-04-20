@@ -4,7 +4,7 @@
 #Lower cases Key Values
 
 #def Playable():
-import printCharInfo.py
+import printCharInfo
 
 def main():
     print("\nYou are creating a playable character.")

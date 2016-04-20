@@ -1,7 +1,7 @@
 #Print Character Information
 #A callable funtion to print out a characters information
 
-def printCharInfo(Char):
+def printCharInfo(Player):
     print("Name: ",Player["Name"])
     print("Class: ",Player["Class"])
     print("Level: ",Player["Level"])
