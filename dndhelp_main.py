@@ -5,7 +5,7 @@
 
 import dice #Tanner
 #Sara
-#Bianca
+import CharacterInformation #Bianca
 
 def main():
 	print("This program serves as a helper for Dungeons and Dragons DMs (version 5, no homebrewing). Type 'help' for a list of commands.")
@@ -37,7 +37,7 @@ def char_creator():
 		if npc == "y":
 			print() #call npc creator
 		else:
-			print() #call character creator
+			CharacterInformation.main()
 	else:
 		exist = input("Would you like to load saved character(s)? (y/n) ")
 		if exist == "y":
