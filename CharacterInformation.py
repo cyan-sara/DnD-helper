@@ -39,7 +39,6 @@ def main():
     #if yes: loop
     #if no: return to main menu
     
-main()
 
 
 

@@ -22,4 +22,4 @@ def NPCChara(NPC):
     # print(Player)
 
     # return NPC
-NPCChara(NPC)
+
