@@ -1,16 +1,13 @@
-# Character Information
-# Using file;Dictionaries 
-# Goal is to turn all the sheets into files'
-#Lower cases Key Values
+#Character Information
+#Goal is to turn all the sheets into files
+#def Playable():?
 
-#def Playable():
 import printCharInfo
 
 def main():
     LvLtype=False
     EXPtype=False    
     print("\nYou are creating a playable character.")
-    
     name=input("Enter Character Name: ")
     Class=input("Enter Class: ")
     while LvLtype !=True:
@@ -32,12 +29,20 @@ def main():
     
     Player={"Name":name,"Class":Class,"Level":LvL,"Race":race,"Alignment":Alin,"Exp":EXP,"Player Name":PN}
     printCharInfo.printCharInfo(Player)
-
-    # Ask: is this correct?
+    
     #if yes: save to dictionary file
     #if no: ask if "Try again?"
     #if yes: loop
     #if no: return to main menu
+
+    yn=input("Is this information correct? (yes/no): " )
+    if yn=="yes":
+        charToFile.charToFile(Player)
+    elif yn=="no":
+        Try=input("Try again? (yes/no): ")
+        if Try=="no":
+    
+
     
 
 
