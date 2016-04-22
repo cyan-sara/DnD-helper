@@ -32,6 +32,12 @@ def main():
     
     Player={"Name":name,"Class":Class,"Level":LvL,"Race":race,"Alignment":Alin,"Exp":EXP,"Player Name":PN}
     printCharInfo.printCharInfo(Player)
+
+    # Ask: is this correct?
+    #if yes: save to dictionary file
+    #if no: ask if "Try again?"
+    #if yes: loop
+    #if no: return to main menu
     
 main()
 
