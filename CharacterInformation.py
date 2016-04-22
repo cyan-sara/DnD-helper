@@ -7,15 +7,26 @@
 import printCharInfo
 
 def main():
-    
+    LvLtype=False
+    EXPtype=False    
     print("\nYou are creating a playable character.")
     
     name=input("Enter Character Name: ")
     Class=input("Enter Class: ")
-    LvL=int(input("Level: "))
+    while LvLtype !=True:
+        try:
+            LvL=int(input("Level: "))
+            LvLtype=True
+        except ValueError:
+            print("Incorrect value type. Please enter an integer.")
     race=input("Race: ")
     Alin=input("Alignment: ")
-    EXP=int(input("Experience Points: "))
+    while EXPtype !=True:
+        try:
+            EXP=int(input("Experience Points: "))
+            EXPtype=True
+        except ValueError:
+            print("Incorrect value type. Please enter an integer.")
     PN=input("Player Name: ")
     print("")
     
