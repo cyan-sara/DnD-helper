@@ -43,6 +43,7 @@ def char_creator():
 		if exist == "y":
 			charx = input("Enter the character(s) you would like to load. (Space between each) ")
 	if charx != "":
+		charx.split()
 		for value in charx:
 			try:
 				f = open(value.py, "r")
