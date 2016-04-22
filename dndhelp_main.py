@@ -46,7 +46,7 @@ def char_creator():
 		charx.split()
 		for value in charx:
 			try:
-				f = open(value.py, "r")
+				f = open(value+".py", "r")
 				print("Successfully loaded character:", value)
 			except IOError:
 				restart = input("Character", value, "not found. Would you like to create a new one? (y/n) ")
