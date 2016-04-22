@@ -4,7 +4,7 @@
 	#calls for all functions
 
 import dice #Tanner
-#Sara
+import npc #Sara
 import CharacterInformation #Bianca
 
 def main():
@@ -35,13 +35,13 @@ def char_creator():
 	if yn == "y":
 		npc = input("Is this character an NPC? (y/n) ")
 		if npc == "y":
-			print() #call npc creator
+			npc.NPCChara()
 		else:
 			CharacterInformation.main()
 	else:
 		exist = input("Would you like to load saved character(s)? (y/n) ")
 		if exist == "y":
-			charx = input("Enter the character(s) you would like to load. (Tab between each) ")
+			charx = input("Enter the character(s) you would like to load. (Space between each) ")
 	if charx != "":
 		for value in charx:
 			try:
@@ -50,8 +50,7 @@ def char_creator():
 			except IOError:
 				restart = input("Character", value, "not found. Would you like to create a new one? (y/n) ")
 				if restart == "y":
-					print() #call character creator
-	return() #the characters?
+					CharacterInformation.main()
 			
 def encount_begin(): #keeps track of turns for status effect purposes, etc
 	yn = input("\nAre you ready to start the encounter? (y/n) ")
