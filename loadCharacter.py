@@ -7,9 +7,24 @@ def loadCharacter(charName):
     keyValue=0
     with open(charName+".txt", "r") as fo:
         for line in fo:
+            splitline=line.strip()
             if keyValue == 0:
-                print(line)
+                key=splitline
+                keyValue+=1
+            elif keyValue == 1:
+                value=splitline
+                keyValue-=1
+                d[key]=value
 
+    upperName=charName.upper()
+    print("Character",upperName,"successfully loaded.") 
+    print("Name:",d["Name"])
+    print("Class:",d["Class"])
+    print("Level:",d["Level"])
+    print("Race:",d["Race"])
+    print("Alignment:",d["Alignment"])
+    print("Exp:",d["Exp"])
+    print("Player Name:",d["Player Name"])
+    
+    return d
 
-charName="Tanner"
-loadCharacter(charName)

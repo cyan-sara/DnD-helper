@@ -1,0 +1,14 @@
+Name
+Bob
+Class
+Friar
+Level
+25
+Race
+Sponge
+Alignment
+CG
+Exp
+24
+Player Name
+Tanner
