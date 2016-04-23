@@ -6,6 +6,7 @@
 import dice #Tanner
 import npc #Sara
 import CharacterInformation #Bianca
+import loadCharacter #Tanner
 
 def main():
 	print("This program serves as a helper for Dungeons and Dragons DMs (version 5, no homebrewing). Type 'help' for a list of commands.")
@@ -46,7 +47,8 @@ def char_creator():
 		charx.split()
 		for value in charx:
 			try:
-				f = open(value+".py", "r")
+                                print(value)
+				loadCharacter.loadCharacter(value)
 				print("Successfully loaded character:", value)
 			except IOError:
 				restart = input("Character", value, "not found. Would you like to create a new one? (y/n) ")

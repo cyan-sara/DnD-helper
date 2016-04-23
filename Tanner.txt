@@ -1,0 +1,14 @@
+Name
+Tanner
+Class
+Warrior
+Level
+20
+Race
+Dwarf
+Alignment
+cn
+Exp
+200
+Player Name
+Tanner

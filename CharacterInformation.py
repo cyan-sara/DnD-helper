@@ -3,6 +3,7 @@
 #def Playable():?
 
 import printCharInfo
+import charToFile
 
 def main():
     LvLtype=False
@@ -39,9 +40,9 @@ def main():
     if yn=="yes":
         charToFile.charToFile(Player)
     elif yn=="no":
-        Try=input("Try again? (yes/no): ")
-        if Try=="no":
-    
+        TryAgain=input("Try again? (yes/no): ")
+        if TryAgain=="no":
+            pass
 
     
 

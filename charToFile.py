@@ -1,19 +1,19 @@
 #Takes the dictionary from the player creator and turns it into a file that
 # be recalled by the main function.
 
-def charToFile(Player)
+def charToFile(Player):
     p0 = "Name"
     p0v = Player["Name"]
     p1 = "Class"
     p1v = Player["Class"]
     p2 = "Level"
-    p2v = Player["Level"]
+    p2v = str(Player["Level"])
     p3 = "Race"
     p3v = Player["Race"]
     p4 = "Alignment"
     p4v = Player["Alignment"]
     p5 = "Exp"
-    p5v = Player["Exp"]
+    p5v = str(Player["Exp"])
     p6 = "Player Name"
     p6v = Player["Player Name"]
 
