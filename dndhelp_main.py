@@ -65,7 +65,7 @@ def encount_begin(): #keeps track of turns for status effect purposes, etc
 	yn = input("\nAre you ready to start the encounter? (y/n) ")
 	count = 0
 	if yn == "y":
-	if len(activeCharacter) != 0:
+		if len(activeCharacter) != 0:
 			print("Active Characters are:",end=" ")
 			itemN=1
 			for item in activeCharacter:
