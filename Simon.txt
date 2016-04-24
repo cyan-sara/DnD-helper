@@ -1,0 +1,14 @@
+Name
+Simon
+Class
+Cleric
+Level
+5
+Race
+Human
+Alignment
+NG
+Exp
+7500
+Player Name
+James
