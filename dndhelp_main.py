@@ -39,7 +39,8 @@ def char_creator():
 		if NPC == "y":
 			npc.NPCChara("bob")
 		else:
-			CharacterInformation.main()
+			activeCharacter.append(CharacterInformation.main())
+			
 	else:
 		exist = input("Would you like to load saved character(s)? (y/n) ")
 		if exist == "y":
@@ -59,10 +60,11 @@ def char_creator():
 			except IOError:
 				restart = input("Character " + value + " not found. Would you like to create a new one? (y/n) ")
 				if restart == "y":
-					CharacterInformation.main()
+					activeCharacter.append(CharacterInformation.main())
 			
 def encount_begin(): #keeps track of turns for status effect purposes, etc
 	yn = input("\nAre you ready to start the encounter? (y/n) ")
+	print()
 	count = 0
 	if yn == "y":
 		if len(activeCharacter) != 0:
@@ -73,8 +75,13 @@ def encount_begin(): #keeps track of turns for status effect purposes, etc
 				if itemN<len(activeCharacter):
 					print(charName+",",end=" ")
 					itemN+=1
+				elif itemN==len(activeCharacter):
+					print(charName+".")
+				
 				else:
 					print("and",charName+".")
+
+			print()
 			print("Have fun storming the castle!")
 		count += int(input("\nEnter the turn number you wish to start on. "))
 	print("Current turn:", count)

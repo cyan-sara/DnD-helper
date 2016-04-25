@@ -1,0 +1,14 @@
+Name
+Bianca
+Class
+Ranger
+Level
+3
+Race
+Drow
+Alignment
+cn
+Exp
+100
+Player Name
+Bianca

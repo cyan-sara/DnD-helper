@@ -39,6 +39,7 @@ def main():
     yn=input("Is this information correct? (yes/no): " )
     if yn=="yes":
         charToFile.charToFile(Player)
+        return Player
     elif yn=="no":
         TryAgain=input("Try again? (yes/no): ")
         if TryAgain=="no":
