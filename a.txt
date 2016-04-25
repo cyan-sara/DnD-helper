@@ -1,0 +1,14 @@
+Name
+a
+Class
+b
+Level
+5
+Race
+d
+Alignment
+e
+Exp
+5
+Player Name
+g
