@@ -55,4 +55,3 @@ def NPCChara(NPC):
     yn=input("Is this information correct? (yes/no): " )
     if yn=="yes":
         charToFile.charToFile(Player)
-NPCChara("bob")
