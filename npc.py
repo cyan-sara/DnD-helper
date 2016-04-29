@@ -1,4 +1,4 @@
-import yaml #allows me to load the dictionay from monsters.py
+import yaml #http://pyyaml.org/wiki/ 
 import printCharInfo
 import charToFile
 def NPCChara(NPC):
@@ -9,23 +9,23 @@ def NPCChara(NPC):
     with open("monsters.py",'r') as file:
         for line in file: #iterate through the file until the dictionary name matches the input race
             file_race,traits=line.split("=") #turn the string given from opening the file into 2 strings
-            if file_race == race_: 
-                f=yaml.load(traits) #turn the 
+            if file_race == race_: #match name of dictionary in file to input race
+                f=yaml.load(traits) #turn the traits string into a dictionary
                 yn=input("I have information already stored about this race \n Would you like to view it? (y/n)")
                 if yn.lower() == "y":
                     for key , value in f.items():
                         print(key,'-',value)
 
-                #     yn=input("Would you like me to append this to the end of your character's file?")
-                #     if yn.lower()=="y":
-                #         with open(race+name+"dict.txt",'w') as savefile:
-                #             for key , value in f.items():
-                #                 savefile.write(key,'-',value)
-                # if yn.lower()=="n":
-            if line =="":
-                print("I couldn't find that race. Here's a list of races I have saved.")
-                with open('monsters_list.txt','r') as monsters:
-                    print(monsters)
+                    yn=input("Would you like me to append this to the end of your character's file?")
+                    if yn.lower()=="y":
+                        with open(race+name+"dict.txt",'w') as savefile:
+                            for key , value in f.items():
+                                savefile.write(key,'-',value)
+        # not working
+            # if line =="":
+            #     print("I couldn't find that race. Here's a list of races I have saved.")
+            #     with open('monsters_list.txt','r') as monsters:
+            #         print(monsters)
     LvLtype=False
     EXPtype=False  
     Class=input("Enter Class: ")

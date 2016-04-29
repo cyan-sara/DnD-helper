@@ -1,14 +1,14 @@
 Name
 Bob
 Class
-Friar
+Rogue
 Level
-25
+7
 Race
-Sponge
+Aboleth
 Alignment
-CG
+x-men
 Exp
-24
+987
 Player Name
-Tanner
+Sara
